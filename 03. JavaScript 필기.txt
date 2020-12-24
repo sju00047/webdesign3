@@ -1,0 +1,28 @@
+<script></script>
+→ document.write(1+1)
+→ document.write("1<br>")
+
+<input></input>
+→ type="button" : 버튼
+→ type="text" : 글자 입력란
+→ value="(문자)" : 기본값
+→ onclick="alert('(문자)')" : 클릭하면 (문자)가 나오는 이벤트
+→ onchange="alert('(문자)')" : 글자가 바뀌면 (문자)가 나오는 이벤트
+→ onkeydown="alert('(문자)')" : 글자를 입력할 때마다 (문자)가 나오는 이벤트
+→ alert('(문자)'.length) : (문자)의 글자 수
+
+[Console에서의 기능]
+toUpperCase : 대문자 변환
+(예) 'hello world'.toUpperCase() : 'HELLO WORLD'
+indexOf : 찾는 문자의 시작 점(0부터 시작)
+(예) 'hello world'.indexOf('o') : 4
+trim : 공백 제거
+(예) '      hello    '.trim() : 'hello'
+
+[Comparison Operator & Boolean]
+=== : 같으면 true, 다르면 false
+(예) 1===1 : true / 1===2 : false
+
+&lt; : less than ("<", ~보다 작다) (※html에 '<'를 넣으면 태그 꺽쇠로 인식)
+&gt; : greater than (">", ~보다 크다)
+(예) 1<2 : true

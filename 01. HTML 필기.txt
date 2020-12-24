@@ -1,0 +1,36 @@
+<strong></strong> : 굵게
+<u></u> : 밑줄 (Underline)
+<h1></h1>~<h6></h6> : 제목 + 줄바꿈
+<br> : 줄바꿈
+<p></p> : 단락 (Paragraph)
+<img src=""> : 이미지 소스 (Image Source)
+<ul></ul> : Unordered List
+<ol></ol> : Ordered List
+<li> : list
+<table> : 표
+<tr> : 표 - 행
+<td> : 표 - 열
+<head></head> : html속성
+<meta>
+→ charset="uft-8"
+<body></body> : html본문
+<html></html> : html 포괄 태그 (최상층 태그)
+<!DOCTYPE html> : html 최상층 주석
+<a></a> : Embedded Link
+→ href="(URL주소)"
+→ target="_blank" : 새 탭에서 열기
+→ title="설명" : 커서 올리면 작은 노란 상자 안에 설명이 나옴
+→ style="CSS" : HTML속성으로 CSS를 이용 (예) <a href="#" style="color:red">글자</a>
+<iframe></iframe> : 동영상 embedded
+<div></div> : block구조식 구역 설정 (division)
+<span></span> : inline구조식 구역 설정
+
+[댓글 기능 구현]
+DISQUS
+LiveRe
+
+[Live 채팅 창 구현]
+tawk.to
+
+[Analytics]
+Google Analytics

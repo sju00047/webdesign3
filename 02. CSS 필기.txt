@@ -1,0 +1,53 @@
+<font></font> : 글자
+→ color : 글자색
+
+<style></style> : CSS
+→ a : 선택자
+→ a {color:red;} : 글자 색을 빨간 색으로 모두 바꿈
+
+color:(색깔이름) : 색깔이름으로 색 변경
+text-decoration : text 꾸미기
+→ none : 꾸미기 없음
+
+class : 선택자 (예) class="saw active"
+→ .saw / .active
+
+ID > Class > 태그 선택자
+(동등한 선택자일 경우 나중에 온 선택자가 우선)
+
+border : block 테두리
+border-width: 선 두께 (예) border-width: 5px;
+border-color: 선 색 (예) border-color: red;
+border-style: 선 종류 (예) border-style: solid;
+
+display
+display: block; : block구조로 변환
+display: inline; : inline구조로 변환
+display: none; : 안 보이게 만듦
+display: grid; : 격자식 구조로 만듦 (10강 참고)
+
+padding : block 내부의 여백 (안쪽 여백)
+(예) padding: 20px;
+
+margin : block 외부의 여백 (바깥쪽 여백)
+(예) margin: 10px;
+
+<div> vs <span>
+div: Block level
+span: Inline
+
+grid-template-columns : grid의 넓이와 높이 설정 (열 기준)
+(예) grid-template-columns: 150px 1fr;
+
+[각 Browser에 따른 작동 가능 여부 확인 사이트]
+caniuse.com (Can I Use?)
+
+Media Query
+@media ( )
+ex) screen size > 800px 는
+@media (min-width:800px) {
+  div {
+    display: none;
+  }
+}
+으로 표시
