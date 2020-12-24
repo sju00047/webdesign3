@@ -16,7 +16,7 @@ toUpperCase : 대문자 변환
 (예) 'hello world'.toUpperCase() : 'HELLO WORLD'
 indexOf : 찾는 문자의 시작 점(0부터 시작)
 (예) 'hello world'.indexOf('o') : 4
-trim : 공백 제거
+trim : (양 끝) 공백 제거 (문자 사이 공백은 제거하지 않음)
 (예) '      hello    '.trim() : 'hello'
 
 [Comparison Operator & Boolean]
