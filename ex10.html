@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+
+    <!-- 배열 / 객체 / 메소2 -->
+    <ul>
+      <li>Array(배열): 순서가 있는 그릇 [대괄호]</li>
+      <li>Object(객체): 순서가 없는 그릇 {중괄호}</li>
+      <li>Method(메소드): '객체' 안에 있는 함수</li>
+    </ul>
+
+    <!-- Creat (생성) -->
+    <h2>Create (생성)</h2>
+    <script>
+      var coworkers = {
+        "programmer" : "egoing",
+        "designer" : "leezche"
+      };
+      document.write("programmer : " + coworkers.programmer + "<br>");
+      document.write("designer : " + coworkers.designer + "<br>");
+        coworkers.bookkeeper = "duru"; //객체 추가 방법(1)
+      document.write("bookkeeper : " + coworkers.bookkeeper + "<br>");
+        coworkers["data scientist"] = "taeho"; //객체 추가 방법 (2) - 띄어쓰기가 있는 경우
+      document.write("data scientist : " + coworkers["data scientist"] + "<br>");
+    </script>
+
+    <!-- Iterate (반복) -->
+    <h2>Iterate (반복)</h2>
+      <script> //for: coworkers에 있는 key값들을 모두 변수로 변환
+        for(var key in coworkers) {
+          document.write(key + '<br>');
+        }
+      </script>
+    <br>
+      <script>
+        for(var key in coworkers) {
+          document.write(coworkers[key] + '<br>');
+        }
+      </script>
+    <br>
+      <script>
+        for(var key in coworkers) {
+          document.write(key + ' : ' + coworkers[key] + '<br>');
+        }
+      </script>
+
+      <h2>Property(객체에 소속된 변수) & Method(객체에 소속된 함수)</h2>
+      <script>
+        // 함수정의방법 3가지
+        // (1) function showAll() {}
+        // (2) var showAll = function() {}
+        // (3) coworkers.showAll = function() {}
+        coworkers.showAll = function(){
+          for(var key in this) {
+            document.write(key + ' : ' + this[key] + '<br>');
+          }
+        }
+        coworkers.showAll();
+      </script>
+  </body>
+</html>

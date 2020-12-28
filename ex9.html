@@ -33,7 +33,7 @@
         document.write(left+right+'<br>');
       }
       function sumColorRed(left, right){
-        document.write('<div style="color:red">' + left + right + '</div><br>')
+        document.write('<div style="color:red">' + (left + right) + '</div><br>') //괄호를 쳐줘야 string이 아닌 number로 인식..
       }
       sum(2,3); // 5
       sumColorRed(2,3);
@@ -50,7 +50,5 @@
       document.write('<div style="color:red">' + sum2(2,3) + '</div>');
       document.write('<div style="font-size:3rem;">' + sum2(2,3) + '</div>');
     </script>
-
-
   </body>
 </html>
